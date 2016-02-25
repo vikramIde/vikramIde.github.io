@@ -275,11 +275,17 @@ h2.subheader{font-size:45px;line-height:45px;color:#ffffff}
 	}
 	
 	#Footer a {
-		color: #ffba00; text-decoration:none;
+		color: #ffffff; text-decoration:none;
 	}
 	
 	#Footer a:hover {
 		color: #ffba00;
+	}
+	#Footer a.parinee{
+		color: #ffba00;
+	}
+	#Footer a.parinee:hover{
+		color: #ffffff;
 	}
 	
 	#Footer h1, #Footer h1 a, #Footer h1 a:hover,
@@ -514,7 +520,7 @@ h2.subheader{font-size:45px;line-height:45px;color:#ffffff}
 	
 /************************ Responsive ************************/
 			@media only screen and (max-width: 767px){
-			#Top_bar, #Action_bar { background: #000 !important;}
+			#Top_bar, #Action_bar { /* background: #000 !important; */}
 		}
 	/*
 |--------------------------------------------------------------------------
@@ -663,18 +669,13 @@ h2.subheader{font-size:45px;line-height:45px;color:#ffffff}
 
 	
 	
-	#gallery-1 {
+#gallery-1 {
 	margin: auto
 }
-#gallery-1 .gallery-item {
-	float: left;
-	margin-top: 10px;
-	text-align: center;
-	width: 33%
-}
+
 #gallery-1
 img {
-	border: 2px solid #cfcfcf
+	border: 2px solid #cfcfcf;
 }
 #gallery-1 .gallery-caption {
 	margin-left: 0
@@ -683,12 +684,7 @@ img {
 #gallery-2 {
 	margin: auto
 }
-#gallery-2 .gallery-item {
-	float: left;
-	margin-top: 10px;
-	text-align: center;
-	width: 33%
-}
+
 #gallery-2
 img {
 	border: 2px solid #cfcfcf
