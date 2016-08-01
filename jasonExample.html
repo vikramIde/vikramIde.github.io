@@ -89,7 +89,12 @@
 			    $.ajax({
 			      crossOrigin: true,
 			      url: url,
-			      success: convertJsonToObject
+			      success: convertJsonToObject,
+			       error: function(XMLHttpRequest, textStatus, errorThrown) { 
+			                    console.log("Status: " + textStatus); 
+			                    console.log("Error: " + errorThrown); 
+			                    alert('Error: Looks like you dont have CORS enabled , Please go to https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi? ')
+			                }
 			        //console.log(jsonData);
 			    });
 
