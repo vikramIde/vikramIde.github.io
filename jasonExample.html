@@ -35,7 +35,7 @@
 	            <div class="col-sm-3 col-md-2 sidebar " style="min-height:300px">
 	            		<ul class="nav nav-sidebar">
 				            <li class="active"><a class="loadevent" href="#">Load Events </a></li>
-				            <li><a href="#">Push</a></li>
+				            <li><a href="#" id="push">Push</a></li>
 				            <li><a href="#" id="pop">Pop</a></li>
 				          </ul>
 	            </div>
@@ -83,7 +83,7 @@
 
 			    //debugger;
 			  }
-
+	
 			  this.getDatafromserver = function(url) {
 
 			    $.ajax({
@@ -125,10 +125,14 @@
 					for (var i = 0; i < elements.length; i++){
 					    elements[i].style.display = 'block';
 					}
-			  }
+			  };
 			  this.deleteFromList =function(index){
 					eventObject.splice(index, 1);
-			  }
+			  };
+			  this.findIndex=function(){
+			  	
+			  	console.log(eventOnject.indexOf('4th Edition Hotelier Summit Africa - 2015'));
+			  };
 
 		};
 
@@ -156,6 +160,11 @@
 		$('#pop').on('click',function(event){
 
 				 jsonHandler.showBtn('btn-danger');
+
+		})
+		$('#push').on('click',function(event){
+
+				 jsonHandler.findIndex();
 
 		})
 
