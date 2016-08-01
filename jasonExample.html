@@ -92,9 +92,8 @@
 			      crossOrigin: true,
 			      url: url,
 			      success: convertJsonToObject,
-			       error: function(XMLHttpRequest, textStatus, errorThrown) { 
-			                    console.log("Status: " + textStatus); 
-			                    console.log("Error: " + errorThrown); 
+			       error: function(error) { 
+			                    console.log("Status: " + error); 
 			                    alert('Error: Looks like you dont have CORS enabled , Please go to https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi? ')
 			                }
 			        //console.log(jsonData);
@@ -166,7 +165,7 @@
 		})
 		$('#push').on('click',function(event){
 
-				alert( jsonHandler.eventOnject.indexOf('4th Edition Hotelier Summit Africa - 2015'));
+				alert( jsonHandler.findIndex());
 
 		})
 
