@@ -91,7 +91,10 @@
 			    $.ajax({
 			      crossOrigin: true,
 			      url: url,
-			      success: convertJsonToObject
+			      success: convertJsonToObject,
+			      error:function(error){
+			      	alert('You need CORS enabler')
+			      }
 			        //console.log(jsonData);
 			    });
 
