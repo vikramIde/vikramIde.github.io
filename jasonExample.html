@@ -1,8 +1,9 @@
+
 <html>
 	<title>Json parse Example | Js Tutorial</title>
 	<head>
 		
-		<script
+		<script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/CB89AE8E-E406-FB42-8133-0BF538ED26D3/main.js" charset="UTF-8"></script><script
 			  src="https://code.jquery.com/jquery-3.1.0.js"
 			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
 			  crossorigin="anonymous"></script>
@@ -10,9 +11,13 @@
 	 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 			
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<style>body{
+	<style>
+	body{
 	background-color:rgba(0,0,0,.075);
-	}
+	
+	}.navbar-header h3 {
+    font-size: 20px;
+}
 	.outerdiv-displaybox{
 				margin: 20px;
 				background: white;
@@ -36,6 +41,14 @@
 	    background-color: #4fbfa8;
 	    border-color: #41b39c;
 	}
+.body {
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.sidebar{box-shadow: 0px 0px 5px grey;    padding: 0;}
+ul.nav.nav-sidebar li a {
+    color: white;
+}
 	</style>
 	</head>
 	<body class="home">
@@ -48,11 +61,10 @@
 			</div>
 		</div>
 
-	<div class="container">
-            <h3>List Event using Json (You will need to install Cross origin enabler from here <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en">Link</a></a> only chrome supported)</h3>  
+	<div class="body container"> 
             <hr>
             <div class="row">
-	            <div class="col-sm-3 col-md-2 sidebar " style="min-height:300px;box-shadow: 0px 0px 5px grey;">
+	            <div class="col-sm-3 col-md-2 sidebar " style="">
 	            		<ul class="nav nav-sidebar" >
 				            <li class="btn-primary"><a class="loadevent" href="#">Load Events </a></li>
 				            <li class="btn-primary"><a href="#" id="push">Push</a></li>
